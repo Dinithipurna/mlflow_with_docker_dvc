@@ -55,6 +55,7 @@ if __name__ == "__main__":
         lr.fit(train_x, train_y)
 
         predicted_qualities = lr.predict(test_x)
+        print(test_x)
 
         (rmse, mae, r2) = eval_metrics(test_y, predicted_qualities)
 
