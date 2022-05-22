@@ -31,7 +31,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--alpha")
     parser.add_argument("--l1-ratio")
-    parser.add_argument("winepath")
+    parser.add_argument("--winepath")
     args = parser.parse_args()
 
     # Read the wine-quality csv file (make sure you're running this from the root of MLflow!)

@@ -31,7 +31,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--alpha")
     parser.add_argument("--l1-ratio")
-    parser.add_argument("winepath")
+    parser.add_argument("--winepath")
     args = parser.parse_args()
 
     # Read the wine-quality csv file (make sure you're running this from the root of MLflow!)
@@ -55,6 +55,7 @@ if __name__ == "__main__":
         lr.fit(train_x, train_y)
 
         predicted_qualities = lr.predict(test_x)
+        print(test_x)
 
         (rmse, mae, r2) = eval_metrics(test_y, predicted_qualities)
 
@@ -70,4 +71,3 @@ if __name__ == "__main__":
         mlflow.log_metric("mae", mae)
 
         mlflow.sklearn.log_model(lr, "model")
-
