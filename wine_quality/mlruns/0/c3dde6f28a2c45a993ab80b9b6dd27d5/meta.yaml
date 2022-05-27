@@ -1,0 +1,15 @@
+artifact_uri: ./mlruns/0/c3dde6f28a2c45a993ab80b9b6dd27d5/artifacts
+end_time: 1653278857971
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+name: ''
+run_id: c3dde6f28a2c45a993ab80b9b6dd27d5
+run_uuid: c3dde6f28a2c45a993ab80b9b6dd27d5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1653278852503
+status: 3
+tags: []
+user_id: macbook
